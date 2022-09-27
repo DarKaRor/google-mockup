@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 81.25%;
+  font-family: 'Roboto','Arial','sans-serif';
+}
+
+body {
+  background-color: #202124;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  height: 100vh;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+}
+
+.header__nav {
+  color: white;
+}
+
+.header__nav .nav__link {
+  color: white;
+  border-bottom: 1px solid transparent;
+}
+
+.header__nav .nav__link:hover {
+  border-bottom: 1px solid white;
+}
+
+.nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  gap: 10px;
+}
+
+.nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__link {
+  text-decoration: none;
+}
+
+.nav__icon {
+  fill: white;
+  width: 100%;
+  max-width: 30px;
+  cursor: pointer;
+}
+
+.nav__container {
+  padding: 10px;
+}
+
+.nav__container:hover {
+  background-color: rgba(232, 234, 237, 0.08);
+  border-radius: 50%;
+}
+
+.nav__profile {
+  border-radius: 50%;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+  gap: 30px;
+  margin: auto;
+}
+
+.searchbar {
+  position: relative;
+  width: 100%;
+}
+
+.searchbar__icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  max-width: 20px;
+  max-height: 20px;
+  fill: #5f6368;
+}
+
+.searchbar__input {
+  background-color: transparent;
+  border: 1px solid #5f6368;
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px 20px 10px 30px;
+  color: white;
+}
+
+.searchbar__input:hover, .searchbar__input:focus {
+  background-color: #303134;
+  border: 1px solid #303134;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+}
+
+.button {
+  background-color: #303134;
+  border: none;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  outline: 1px solid #5f6368;
+}
+
+.footer {
+  background-color: #171717;
+  font-size: 1.1rem;
+  color: #9aa0a6;
+}
+
+.footer__content {
+  padding: 12px 30px 12px 30px;
+}
+
+.footer__content:first-child {
+  border-bottom: 1px solid #3c4043;
+}
+
+.footer__nav .nav__link {
+  color: #9aa0a6;
+  border-bottom: 1px solid transparent;
+}
+
+.footer__nav .nav__link:hover {
+  border-bottom: 1px solid #9aa0a6;
+}
+
+.footer__navGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+/*# sourceMappingURL=styles.css.map */

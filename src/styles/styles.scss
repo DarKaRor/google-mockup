@@ -1,0 +1,144 @@
+@import "./scss/mixins";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:81.25%;
+    font-family: 'Roboto','Arial','sans-serif';
+}
+
+body{
+    background-color: #202124;
+    @include flex-align(space-between,initial,column);
+    height:100vh;
+}
+
+.header{
+    @include flex-align(flex-end);
+
+    &__nav{
+        color:white;
+
+        .nav__link{
+            @include underline(white);
+        }
+    }
+}
+
+.nav{
+    &__items{
+        @include flex-align(initial,center);
+        list-style: none;
+        gap:10px;
+    }
+
+    &__item{
+        @include flex-center;
+    }
+
+    &__link{
+        text-decoration: none;
+    }
+
+    &__icon{
+        fill:white;
+        width:100%;
+        max-width:30px;
+        cursor:pointer;
+    }
+
+    &__container{
+        padding:10px;
+
+        &:hover{
+            background-color:rgba(232,234,237,.08);
+            border-radius:50%;
+        }
+    }
+
+    &__profile{
+        border-radius:50%;
+    }
+}
+
+.content{
+    @include flex-center(column);
+    width:500px;
+    gap:30px;
+    margin:auto;
+}
+
+$btn-color: #303134;
+$color: #5f6368;
+.searchbar{
+    position: relative;
+    width:100%;
+    $space: 10px;
+
+    &__icon{
+        position:absolute;
+        top:0;
+        bottom:0;
+        margin: auto 0;
+        left: $space;
+        @include square(20px);
+        fill: $color;
+    }
+
+    &__input{
+        background-color: transparent;
+        border:1px solid $color;
+        border-radius:20px;
+        width:100%;
+        padding:10px 20px 10px (20px + $space);
+        color:white;
+
+        &:hover,&:focus{
+            background-color: $btn-color;
+            border:1px solid $btn-color;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            outline:none;
+        }
+    }
+}
+
+.button{
+    background-color:$btn-color;
+    border:none;
+    color:white;
+    padding:10px 15px 10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+
+    &:hover{
+        outline: 1px solid $color;
+    }
+}
+
+.footer{
+    background-color:#171717;
+    font-size:1.1rem;
+    color:#9aa0a6;
+
+    &__content{
+        padding:12px 30px 12px 30px;
+
+        &:first-child{
+            border-bottom:1px solid #3c4043;
+        }
+    }
+
+    &__nav{
+        .nav__link{
+            @include underline(#9aa0a6);
+        }
+    }
+
+    &__navGroup{
+        @include flex-align(space-between,flex-end);
+    }
+}

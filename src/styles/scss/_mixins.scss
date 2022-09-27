@@ -1,0 +1,31 @@
+@mixin flex-align($h:initial,$v:initial,$dir:row){
+    display:flex;
+    flex-direction: $dir;
+    justify-content: $h;
+    align-items: $v;
+}
+
+@mixin flex-center($dir:row){
+    @include flex-align(center,center,$dir)
+}
+
+@mixin square($size){
+    width:100%;
+    height:100%;
+    max-width:$size;
+    max-height:$size;
+}
+
+@mixin circle($size){
+    border-radius:50%;
+    @include square($size);
+}
+
+@mixin underline($color){
+    color:$color;
+    border-bottom:1px solid transparent;
+
+    &:hover{
+        border-bottom:1px solid $color;
+    }
+}
